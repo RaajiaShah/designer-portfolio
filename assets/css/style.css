@@ -1,0 +1,445 @@
+/*
+===============================================
+  Project Name  : Designer Portfolio Website
+  File Name     : style.css
+  Author        : Raajia Shah
+  Created On    : 27-07-2025
+  Description   : Main stylesheet for layout and design
+  Location      : /designer-portfolio/assets/css/
+  Copyright     : © 2025 Raajia Shah
+===============================================
+*/
+ 
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.section {
+  padding: 60px 40px;
+  margin: auto;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffe600;
+  color: #333 !important;
+  font-weight: bold !important;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+/* Header Styles */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #222;
+  color: #fff;
+  box-shadow: 0 0 10px 0px rgba(126, 126, 126, 0.623);
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffe600;
+  cursor: pointer;
+}
+
+.navbar .logo:hover {
+  opacity: 0.85;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 20px;
+  margin-left: auto;
+}
+
+.navbar .nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar .nav-links li a:hover {
+  color: #ffe600;
+}
+
+.nav-links .btn {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Hamburger Button */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: #ffe600;
+  color: #333;
+  border: none;
+  cursor: pointer;
+  opacity: 100;
+  margin-left: auto;
+  font-weight: bold;
+}
+
+/* Hero Section Styles */
+.hero {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+  margin-top: 4em;
+}
+
+.hero h1 span {
+  color: #ffe600;
+}
+
+.cta {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffe600;
+  color: #333 !important;
+  font-weight: bold;
+  margin-top: 20px;
+  text-decoration: none !important;
+}
+
+.cta:hover {
+  opacity: 0.85;
+}
+
+/* About Section Styles */
+.about-section {
+  background-color: #eeeeee;
+  padding: 60px 20px;
+}
+
+.about-section .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  min-width: 100%;
+  margin: 0 auto;
+}
+
+.about-content {
+  flex: 1;
+}
+
+.about-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  text-align: left !important;
+  max-width: max-content;
+  margin: 0 auto;
+}
+
+.skills-list li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #333;
+  text-align: left;
+}
+
+.skills-list i {
+  color: #ffe600;
+  margin-right: 8px;
+}
+
+.skills-list .btn {
+  margin: 0 auto;
+  display: flex;
+}
+
+/* Portfolio Section Styles */
+.portfolio-section {
+  padding: 60px 20px;
+  background-color: #ccc;
+  text-align: center;
+}
+
+.portfolio-section h2 {
+  color: #111;
+}
+
+.portfolio-subtitle {
+  font-size: 1.1rem;
+  color: #111;
+  margin-bottom: 40px;
+}
+
+.gallery .col-md-4,
+.gallery .col-md-4 .portfolio-item {
+  height: 100% !important;
+}
+
+.portfolio-item {
+  height: 100% !important;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.portfolio-item img {
+  width: 100%;
+  object-fit: cover;
+  height: 250px;
+  transition: transform 0.4s ease;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.05);
+}
+
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.3s ease;
+  padding: 20px;
+  text-align: center;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.portfolio-overlay h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.view-btn {
+  background-color: #ffe600;
+  padding: 10px 20px;
+  color: #333 !important;
+  text-decoration: none !important;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: background-color 0.3s;
+}
+
+.view-btn:hover {
+  opacity: 0.85;
+}
+
+
+/* Contact Section Styles */
+.contact-section {
+  background: #eeeeee;
+}
+
+.contact-section .col-md-6 {
+  margin: auto !important;
+  width: 100% !important;
+}
+
+.contact-section form {
+  min-width: 100% !important;
+  margin: auto !important;
+  background: #111;
+  padding: 20px;
+  text-align: left;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.contact-section form h3 {
+  color: #ffe600;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+}
+
+.contact-section form .btn {
+  background: #ffe600;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: auto !important;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.contact-section form .btn:hover {
+  opacity: 0.85 !important;
+}
+
+.contact-section form .btn i {
+  margin-right: 5px;
+}
+
+/* Footer Styles */
+footer {
+  position: relative;
+  text-align: center;
+  padding: 60px 20px 20px;
+  background-color: #222;
+  color: #fff;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 32px;
+}
+
+.footer h4 {
+  margin-bottom: 16px;
+  color: #ffe600;
+}
+
+.footer-links,
+.footer-contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li,
+.footer-contact li {
+  margin-bottom: 8px;
+}
+
+.footer-contact li i {
+  color: #ffe600;
+}
+
+.footer-links a {
+  color: #eee;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #ffe600;
+}
+
+.hero-social a,
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin-right: 8px;
+  color: #111;
+  background: #ffe600;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.hero-social a:hover,
+.footer-social a:hover {
+  opacity: 0.85;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+.newsletter-form button {
+  padding: 10px 16px;
+  height: 100%;
+  border: none;
+  background: #ffe600 !important;
+  color: #333 !important;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.newsletter-form button:hover {
+  opacity: 0.85;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.back-to-top {
+  color: #ffe600;
+  text-decoration: none;
+  font-size: 20px;
+  display: inline-flex;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #ffe600;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-to-top:hover {
+  color: #ffe600 !important;
+  text-decoration: none !important;
+  opacity: 0.85;
+}

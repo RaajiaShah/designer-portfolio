@@ -1,0 +1,223 @@
+<!--
+===============================================
+  Project Name  : Designer Portfolio Website
+  File Name     : index.html
+  Author        : Raajia Shah
+  Created On    : 27-07-2025
+  Description   : Homepage of the website
+  Copyright     : © 2025 Raajia Shah
+===============================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Areeba - UI/UX & Web Designer Portfolio">
+  <title>Areeba – UI/UX Designer</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Custom CSS Files -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="fixed-top">
+    <nav class="navbar">
+      <div class="logo">Areeba.Design</div>
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <a href="#" class="btn">
+          <i class="fas fa-download"></i> Download Resume
+        </a>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="col-m-12">
+      <h1>Hi, I'm <span>Areeba</span></h1>
+      <p>I design digital experiences that stand out.</p>
+      <div class="hero-social mt-4">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
+        <a href="#" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+      </div>
+      <a href="#portfolio" class="btn cta mt-4">
+        <i class="fas fa-arrow-right"></i>
+        View My Work
+      </a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="col-md-12 about-content">
+        <h2>About Me</h2>
+        <p>I'm <strong>Areeba</strong>, a passionate <strong>UI/UX Designer</strong> with 3+ years of experience
+          designing intuitive and visually compelling digital experiences. I specialize in creating user-centered
+          designs for startups and growing brands across web and mobile platforms.</p>
+
+        <ul class="skills-list">
+          <li><i class="fas fa-check-circle"></i> User Interface Design</li>
+          <li><i class="fas fa-check-circle"></i> UX Research & Prototyping</li>
+          <li><i class="fas fa-check-circle"></i> Mobile App Design</li>
+          <li><i class="fas fa-check-circle"></i> Responsive Web Design</li>
+        </ul>
+        <a href="#contact" class="btn mt-3"><i class="fas fa-handshake"></i> Let's Work Together</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="section portfolio-section">
+    <div class="container">
+      <h2>My Work</h2>
+      <p class="portfolio-subtitle">Here are some of the projects I've worked on — from web design to complete UX flows.
+      </p>
+      <div class="row gallery">
+        <div class="col-md-4 mb-lg-0 mb-3">
+          <div class="portfolio-item">
+            <img src="assets/img/portfolio/item1.png"
+              alt="Project 1">
+            <div class="portfolio-overlay">
+              <h3>Startup Landing Page</h3>
+              <a href="#" target="_blank" class="view-btn"><i class="fas fa-arrow-right"></i> View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-lg-0 mb-3">
+          <div class="portfolio-item">
+            <img src="assets/img/portfolio/item2.png"
+              alt="Project 2">
+            <div class="portfolio-overlay">
+              <h3>SaaS Dashboard UI</h3>
+              <a href="#" target="_blank" class="view-btn"><i class="fas fa-arrow-right"></i> View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-lg-0 mb-3">
+          <div class="portfolio-item">
+            <img src="assets/img/portfolio/item3.png"
+              alt="Project 3">
+            <div class="portfolio-overlay">
+              <h3>Mobile App Design</h3>
+              <a href="#" target="_blank" class="view-btn"><i class="fas fa-arrow-right"></i> View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section section">
+    <div class="container">
+      <h2 class="mb-4">Have a Project? Contact <strong>Me</strong></h2>
+      <div class="row p-0">
+        <div class="col-md-6 p-0">
+          <form class="form" action="https://formspree.io/f/your-id" method="POST">
+            <h3 class="text-center">Get In Touch</h3>
+            <p class="text-center mb-4">Have a project in mind or just want to say hello? Feel free to drop me a message
+              using the form below — I’ll get back to you as soon as possible.</p>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="_replyto" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+              <label for="mesage">Message</label>
+              <textarea id="mesage" name="message" placeholder="Your message" required></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <!-- About -->
+      <div class="footer-col footer-about">
+        <h4>About</h4>
+        <p>
+          I’m Areeba, a UI/UX Designer crafting delightful digital experiences for startups and brands.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="footer-contact">
+          <li><i class="fa-solid fa-envelope"></i> hello@areeba.design</li>
+          <li><i class="fa-brands fa-whatsapp"></i> +92 3XX XXX XXXX</li>
+          <li><i class="fa-solid fa-location-dot"></i> Remote / Pakistan</li>
+        </ul>
+        <div class="footer-social mt-4">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
+          <a href="#" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+        </div>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="footer-col footer-newsletter">
+        <h4>Newsletter</h4>
+        <p>Get occasional updates about my new work & freebies.</p>
+        <form action="#" method="post" class="newsletter-form">
+          <input type="email" name="email" placeholder="Your email" required />
+          <button type="submit" class="btn btn-primary">
+            <i class="fas fa-envelope"></i> Subscribe
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        &copy; <span id="year"></span> Areeba.Design — All rights reserved.
+      </p>
+      <a href="#top" class="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </div>
+  </footer>
+
+
+  <script src="assets/js/script.js"></script>
+
+
+</body>
+
+</html>

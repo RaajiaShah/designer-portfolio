@@ -1,0 +1,49 @@
+/*
+===============================================
+  Project Name  : Designer Portfolio Website
+  File Name     : responsive.css
+  Author        : Raajia Shah
+  Created On    : 27-07-2025
+  Description   : Responsive Stylesheet for layout and design
+  Location      : /designer-portfolio/assets/css/
+  Copyright     : © 2025 Raajia Shah
+===============================================
+*/
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 74%;
+    left: 0;
+    width: 100%;
+    background-color: #ffe600;
+    flex-direction: column;
+    align-items: center;
+    display: none !important;
+    padding: 1rem 0;
+    transition: all 0.3s ease-in-out !important;
+    margin-top: 0;
+  }
+
+  .nav-links.active {
+    display: flex !important;
+  }
+
+  .nav-links .btn {
+    background: #222 !important;
+    color: #ffe600 !important;
+    font-weight: bold;
+  }
+}
